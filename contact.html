@@ -1,61 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mustafa's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">    
-    <link rel="stylesheet" href="./assets/css/style.css">
+<!doctype html>
+<html lang="en-us">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Mustafa Farah</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-    <h1>Mustafa Farah</h1>
-        <nav class="pagelinks">
-            <ul>
-                <li><a class="links" href="index.html" style="border-right: solid #dddddd 1px; padding-left: 15px; padding-right: 15px;">About</a></li>
-                <li><a class="links" href="portfolio.html" style="border-right: solid #dddddd 1px; padding-left: 15px; padding-right: 15px;">Portfolio</a></li>
-                <li><a class="links" href="#" style="padding-left: 15px; padding-right: 15px;">Contact</a></li>
-            </ul>
-        </nav>  
-    </header>
 
-    <main class="container">
-
-    <div class="content">
-        <h4>Contact</h4>
-            <form>
-                <label>
-                    Name
-                    <input type="text" class="smallforms" placeholder="Jon Snow">
-                <label>
-                    Email
-                    <input type="text" class="smallforms" placeholder="example@gmail.com">
-                <label>
-                    Message
-                    <input type="textarea" id="largeform">
-                <label>
-                    <input type="submit">
-                </label>
-            </form>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Mustafa Farah</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="sidebar">
-    <h2>Connect With Me</h2>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
         <ul>
-            <li><a href="https://github.com/mustafa15ali"><img id="Github" src="assets/images/github.png" alt="Github"></li>      
-            <li><a href="https://www.linkedin.com/in/mustafa-farah-abb2a681/"><img id="LinkedIn" src="assets/images/LinkedIn.png" alt="LinkedIn"></li>                    
-            <li><a href="https://stackoverflow.com/users/9319601/mustafa15ali"><img id="Stack_Overflow" src="assets/images/Stack_Overflow.png" alt="Stack Overflow"></li>    
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
         </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/mustafa15ali"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/mustafa-farah-abb2a681/"><img src="assets/images/LinkedIn.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/9319601/mustafa15ali"><img src="assets/images/Stack_Overflow.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy;  Mustafa Farah 
     </div>
-
-    </main>
-
-    <footer>
-        <p>&copy; Copyright 2018 Mustafa Farah</p>
-    </footer>
-
+  </footer>
 </body>
+
 </html>
