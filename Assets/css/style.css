@@ -261,6 +261,7 @@ body {
 
     .container {
       margin-left: 20px;
+      margin: auto;
   } 
 
     /* sidebar */
